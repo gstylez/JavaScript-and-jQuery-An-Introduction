@@ -1,11 +1,17 @@
-if(window.name="Popup") {
+if(window.name == "Popup") {
 	window.onload = function() {
 		var btn = document.getElementById("btnAddEmail");
 		return false;
 		btn.onclick = fAddEmail();
 	}
 	function fAddEmail() {
-		alert()
+		// alert("test");
+		var eltInput = document.createElement("INPUT");
+		var eltP = document.createElement("p");
+		var div = document.getElementById("divEmail");
+		div.appendChild(eltP);
+		eltP.appendChild(eltInput);
+		console.log(document.body.innerHTML);
 	}
 } else {
 	window.onload = function() {
