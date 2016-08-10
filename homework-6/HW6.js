@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	txt.addEventListener("blur", fTextInputLostFocus);
 	txt.addEventListener("input", fValidateUserName);
 	fStartScrolling();
+	fScrollText();
+	// setTimeout(fScrollText, 100);
 
 	function fTextInputGetFocus() {
 		if(txt.value == 'Enter Username') {
@@ -18,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	function fTextInputLostFocus() {
 		if(txt.value.length == 0) {
 			txt.value = "Enter Username";
+			txt.style.backgroundColor = "";
 		} else {
 			txt.style.backgroundColor = "";
 			return true;
@@ -43,14 +46,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		}
 	}
 	
-/*
+
 	function fStartScrolling() {
 		var msg, len, pos, pad, IpadMsg, pre;
 		msg = "Enter a username having at least 6 characters and no more than 20";
 		len = 25;
 		pos = 0;
-		pad = 
+		pad = msg.replace(/./g, ' ').slice(0, len);
+    	IpadMsg = pad + msg;
+    	pre = document.getElementById("preTicker");
+    	pre.innerHTML = curMsg;
 	}
-*/
+	
+	function fScrollText() {
+		var curMsg = IpadMsg.substring(pos, len);
+		pre.innerHTML = curMsg;
+		if(curMsg.string = 0) {
+			pos = 0;
+		} else {
+			return(true);
+		}
+	}
+
 	
 });
