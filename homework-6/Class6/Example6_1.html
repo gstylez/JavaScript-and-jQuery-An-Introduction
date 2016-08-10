@@ -1,0 +1,31 @@
+<!--Example 6-1-->
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Example 6-1</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Example6_1.css"></link>
+	<script> 
+		window.onerror= function(errorMsg, url, lineNumber) {
+		alert('Error: ' + errorMsg + '\nScript: ' + url + '\nLine: ' + lineNumber);
+		};
+	</script>
+	<script>
+		// Define a function to display the current time
+		function displayTime() {
+			var elt = document.getElementById("clock"); // Find element with id="clock"
+			var now = new Date(); // Get current time
+			elt.innerHTML = now.toLocaleTimeString(); // Make elt display it
+			setTimeout(displayTime, 1000); // Run again in 1 second
+		}
+		//When DOM is ready
+		document.addEventListener('DOMContentLoaded', function(){
+			displayTime();
+			}
+		);
+	</script>
+</head>
+<body> <!-- The body is the displayed parts of the doc. -->
+	<h1>JavaScript Clock</h1> <!-- Display a title -->
+	<span id="clock"></span> <!-- The time gets inserted here -->
+</body>
+</html>

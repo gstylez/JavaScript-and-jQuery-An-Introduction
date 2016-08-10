@@ -1,0 +1,32 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	height: 100%;
+	font-family: "Segoe UI", arial, helvetica, freesans, sans-serif;
+	margin: 10px;
+	color: #333;
+	background-color: #fff;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+div{
+	height:100px;
+}
+p{
+	margin: 0 0 1em 0;
+}
+
+#imgButterfly{
+	display: block;
+	max-width:800px;
+	height: auto; 
+	margin: 2em auto;
+	border: 5px solid #ccc;
+	border-radius: 5px;
+	cursor: n-resize;
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
+}

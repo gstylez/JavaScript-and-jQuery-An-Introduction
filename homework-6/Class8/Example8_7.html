@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Example 8-7</title>
+	<link class="SS" rel="stylesheet" type="text/css" href="CSS/Example8_7.css" />
+	<script type="text/javascript" src="JS/Example8_7.js"></script>
+</head>
+<body>
+	<h1>Various Mouse Events</h1>
+	<h3>Cancelling the right-click contextmenu.</h3>
+	<p>When right-clicking you will notice an alert, but not the default context menu.</p>
+	<input id="txtRightClick" type="text" value="Right-click on this text" >
+	<h3>Tracking Mouse Coordinates</h3>
+	<h4>Relative to Window</h4>
+	<p>Here are the relative coordinates to the current window</p>
+	<input id="txtWindow" type="text" value="Move mouse into this textbox" >
+	<h4>Relative to Document</h4>
+	<p>Here are the relative coordinates to the current document</p>
+	<input id="txtDocument" type="text" value="Move mouse into this textbox" >	
+	<h3>Dragging Mouse Event</h3>
+	<p>In the following example, the ball image can be dragged around:</p>
+	<div >
+		Click the ball and drag to move it.<br/>
+		<img id="imgSoccerBall" src="Images/SoccerBall.gif" style="z-index:999" width="50" height="50" />
+	</div>
+	<br>
+	<h3>Mousewheel Example</h3>
+	<input id="txtImage" type="text" size="70" value="Height and width of image in pixels" >
+	<img id="imgButterfly" src="Images/butterfly.jpg" alt="a butterfly" />
+</body>
+</html>

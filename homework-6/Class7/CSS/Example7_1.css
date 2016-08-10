@@ -1,0 +1,10 @@
+#divSquare {
+  width: 2em;
+  height: 2em;
+  border: 2px inset gray;
+  margin-bottom: 1em;
+}
+ 
+button {
+  padding: .5em 2em;
+}

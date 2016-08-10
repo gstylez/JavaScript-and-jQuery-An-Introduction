@@ -1,0 +1,29 @@
+#mainContent {
+    background-color: #A2BFCE;
+    border-radius: 4px;
+    padding: 10px;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+.cloud {
+    position: absolute;
+}
+#bigcloud {
+    animation: bobble 5s ease-in-out infinite;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+@keyframes bobble {
+    0% {
+        transform: translate3d(50px, 20px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(50px, 80px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(50px, 20px, 0px);
+    }
+}

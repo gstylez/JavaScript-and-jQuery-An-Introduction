@@ -1,0 +1,21 @@
+body *{
+	border:1px solid red;
+	margin:10px;
+	padding:0;
+}
+body,html{
+	height:130px;
+	margin:0;
+	padding:0;
+}
+#divTop{
+	width:100px;
+	font-size: 32px; 
+	margin-top: 0; 
+	background:green;
+}
+#divBottom{
+	width:100px; 
+	font-size: 30px; 
+	background:blue;
+}

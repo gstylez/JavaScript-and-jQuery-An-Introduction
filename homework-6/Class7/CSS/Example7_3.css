@@ -1,0 +1,8 @@
+.normal {
+  background-color: silver; 
+}
+.emphasize { /* Styles to grab the user's attention */
+	background-color: red; /* Yellow highlight background */
+	font-weight: bold; /* Bold text */
+	border: solid black 2px; /* Black box */
+}

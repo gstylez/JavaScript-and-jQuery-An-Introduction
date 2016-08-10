@@ -1,0 +1,7 @@
+#clock { /* Make the clock look nice */
+	font: bold 24pt sans; 
+	background: #ddf; 
+	padding: 10px;
+	border: solid black 2px; 
+	border-radius: 10px;
+}
