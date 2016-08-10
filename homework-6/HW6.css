@@ -1,0 +1,9 @@
+#preTicker {
+	width: 250px;
+	height: 25px;
+	background-color: silver;
+}
+#txtUsername {
+	border: 1px solid black;
+	margin: 5px;
+}
