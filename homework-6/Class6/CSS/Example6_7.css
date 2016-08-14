@@ -1,0 +1,41 @@
+#TOC { 
+	border: solid black 1px; 
+	margin: 20px; 
+	padding: 10px; 
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: LightGoldenRodYellow;
+}
+.SectionNum { 
+	font-family: sans-serif; 
+	}
+a[href^="#"] { /* Remove underline from all internal links */
+	text-decoration: none; 
+	}
+.TOCLevel1 { 
+	font-size: 18pt; 
+	font-weight: bold; 
+	}
+.TOCLevel2 { 
+	font-size: 16pt; 
+	margin-left: .25in; 
+	}
+.TOCLevel3 { 
+	font-size: 14pt; 
+	margin-left: .50in; 
+	}
+.TOCLevel4 { 
+	font-size: 12pt; 
+	margin-left: .70in;
+}	
+.TOCLevel5 { 
+	font-size: 10pt; 
+	margin-left: .80in; 
+}
+.TOCLevel6 { 
+	font-size: 10pt; 
+	margin-left: .90in; 
+}
+.SectionNum:after { /*Add period and space after section number */
+	content: ". "; 
+}

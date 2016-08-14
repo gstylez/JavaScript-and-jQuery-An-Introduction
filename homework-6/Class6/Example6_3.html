@@ -1,0 +1,25 @@
+<!--Example 6-3-->
+<!DOCTYPE html> 
+<html> 
+<head> 
+		<title>Example 6-3</title>
+		<script> //JavaScript to open new window
+		document.addEventListener("DOMContentLoaded", function() {
+			var button = document.getElementById("btnWinOpen");
+			button.onclick = function(){
+				if(confirm("Open new Window?"))
+				{
+					var win = window.open("Example6_3a.html","Course",
+					"height=600,width=1200,menubar=no,resizable=no,scrollbars=yes");
+					win.alert("Navigating to course web site")
+				}
+			}
+		});
+		</script>
+</head>
+<body> <!-- The body is the displayed parts of the doc. -->
+	<h1>Opening and Closing Windows</h1> <!-- Display a title -->
+<p>Below is a button that opens the course web site (ucb-access.org)</p>
+<input type="button" id="btnWinOpen" value="Course Web Site" />
+</body>
+</html>

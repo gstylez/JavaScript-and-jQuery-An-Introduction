@@ -1,0 +1,23 @@
+.parent{
+	background:blue;
+	width:200px;
+	height:200px;
+	position:relative;
+}
+.child{
+	background:red;
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:50px;
+	top:50px;
+}
+#mouseoverlog{
+	height:100px;
+	width:400px;
+}
+#divBox{
+	padding:10px;
+	border: 1px solid blue;
+	width:600px;
+}

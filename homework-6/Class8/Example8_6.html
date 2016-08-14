@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Example 8-6</title>
+	<link class="SS" rel="stylesheet" type="text/css" href="CSS/Example8_6.css" />
+	<script type="text/javascript" src="JS/Example8_6.js"></script>
+</head>
+<body>
+	<h1>MouseOut/MouseOver and MouseEnter/MouseLeave Events</h1>
+	<p>The mouse pointer can only be over a <strong>single</strong> element in one moment of time. The one which is <em>topmost</em>, 
+	with maximal <code>z-index</code> and <em>deepest</em>, the most nested.</p>
+	<p><strong>When mouse goes to a child element, the parent triggers <code>mouseout</code>.</strong> So it looks like the mouse has left the parent, 
+	but it just moved into a child.</p>
+	<p>The blue <code>DIV</code> in the example below has the event-printing handler.<br/>
+	See how it looks, move the mouse from blue to red.</p>
+	<div id="divParent" class="parent">Parent
+		<div class="child">Child</div>
+	</div>
+	<p><textarea  id="mouseoverlog"></textarea><br/>
+	<input id = "btnClear" type="button" value="Clear"/></p>
+	<p>When moving from the parent to the child, the events are:</p>
+	<ol>
+		<li><code>mouseout</code> on the parent</li>
+		<li><code>mouseover</code> on the child, which bubbles to the parent and triggers it&#8217;s handler.</li>
+	</ol>
+	<p>So, there is actually a pair of events, which may spoil the code behavior if not taken into account.</p>
+	<p>Usually, we do not need to know about the mouse moving to child elements.
+	All we want is to know when the mouse enters the element and when it leaves.</p>
+		<div  id="divBox">
+		 <p>Move the mouse in and outside of here. The blue box parent has <i>many</i> other <b>elements</b> inside.</p>
+		 <p>They do not generate extra `mouseover/mouseout` events due to the fact that mouseenter and mouseleave
+		 events do not bubble up.</p>
+		</div>
+		<div>Event Output</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Example 8-10</title>
+	<script type="text/javascript" src="JS/Example8_10.js"></script>
+</head>
+<body>
+	<h1>Keyboard Events</h1>
+	<p>To better understand keyboards event, enter values into the textbox below.</p>
+	<form name="keyform" id="keyform" onsubmit="return false">
+		<p> 
+			Prevent default:<label><input type="checkbox" name="keydownStop" value="1"/>keydown</label>&nbsp;&nbsp;&nbsp;
+			<label><input type="checkbox" name="keypressStop" value="1"/>keypress</label>&nbsp;&nbsp;&nbsp;
+			<label><input type="checkbox" name="keyupStop" value="1"/> keyup</label><br/>
+			Ignore:<label><input type="checkbox" name="keydownIgnore" value="1"/> keydown</label>&nbsp;&nbsp;&nbsp;
+			<label><input type="checkbox" name="keypressIgnore" value="1"/> keypress</label>&nbsp;&nbsp;&nbsp;
+			<label><input type="checkbox" name="keyupIgnore" value="1"/> keyup</label><br/><br/>
+			Focus on the input below and press.<br/>
+			<input type="text" style="font-size:150%;width:600px" id="keyInput"/><br/><br/>
+			Log:<br/>
+			<textarea rows="18" onfocus="this.blur()" style="width:600px;border:1px solid black"></textarea><br/>
+			<input id = "btnClear" type="button" value="Clear" />
+		</p>
+	</form>
+</body>
+</html>
